@@ -160,8 +160,10 @@ namespace Prototype.NetworkLobby
         public BackButtonDelegate backDelegate;
         public void GoBackButton()
         {
-            backDelegate();
-			topPanel.isInGame = false;
+            //backDelegate();
+			//topPanel.isInGame = false;
+
+            s_Singleton.ServerReturnToLobby();
         }
 
         // ----------------- Server management
