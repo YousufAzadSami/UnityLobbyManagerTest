@@ -163,7 +163,8 @@ namespace Prototype.NetworkLobby
             //backDelegate();
 			//topPanel.isInGame = false;
 
-            s_Singleton.ServerReturnToLobby();
+            // This will break the state maybe. 
+            s_Singleton.SendReturnToLobby();
         }
 
         // ----------------- Server management
